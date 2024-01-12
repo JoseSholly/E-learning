@@ -46,7 +46,8 @@ class Module(models.Model):
 
 class Content(models.Model):
     module= models.ForeignKey(Module,
-                              related_name= 'contents')
+                              related_name= 'contents',
+                              on_delete= models.CASCADE)
     content_type= models.ForeignKey(ContentType,
                                     on_delete= models.CASCADE,
                                     limit_choices_to= {'models__in':(
