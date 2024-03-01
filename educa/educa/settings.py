@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     'courses.apps.CoursesConfig',
     'students.apps.StudentsConfig',
     'django.contrib.admin',
+    'embed_video',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
