@@ -142,7 +142,7 @@ CACHES = {
         # 'BACKEND': 'django.core.cache.backends.memcached.PyMemcacheCache',
         # 'LOCATION': '127.0.0.1:11211',
         'BACKEND': 'django.core.cache.backends.redis.RedisCache',
-        'LOCATION': '127.0.0.1:6379',
+        'LOCATION': 'redis://127.0.0.1:6379',
     }
 }
 
@@ -160,7 +160,7 @@ CACHE_MIDDLEWARE_KEY_PREFIX = 'educa'
 # Redis settings
 REDIS_HOST = 'localhost'
 REDIS_PORT = 6379
-REDIS_DB = 0
+REDIS_DB = 1
 
 REST_FRAMEWORK = {
     # Use Django's standard `django.contrib.auth` permissions,
