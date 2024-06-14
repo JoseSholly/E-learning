@@ -36,6 +36,8 @@ INSTALLED_APPS = [
     'students.apps.StudentsConfig',
     'django.contrib.admin',
     'embed_video',
+
+    
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -44,6 +46,7 @@ INSTALLED_APPS = [
     'debug_toolbar',
     'redisboard',
     'rest_framework',
+    'chat.apps.ChatConfig',
 ]
 
 MIDDLEWARE = [
